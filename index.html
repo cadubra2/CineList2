@@ -25,7 +25,30 @@
   <main class="container">
 
     <!-- Seção Catálogo -->
-    <section id="sec-catalogo"></section>
+    <section id="sec-catalogo" class="secao ativa">
+
+      <header class="secao__cabecalho">
+        <h2>Lançamentos do Ano</h2>
+        <p class="secao__subtitulo">Filmes e séries lançados este ano.</p>
+      </header>
+
+      <!-- Filtros -->
+      <section class="filtros">
+        <div class="campo">
+          <label for="tipoSelect">Tipo:</label>
+          <select id="tipoSelect">
+            <option value="movie">Filmes</option>
+            <option value="tv">Séries</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="generoSelect">Gênero:</label>
+          <select id="generoSelect">
+            <option value="">Todos</option>
+          </select>
+        </div>
+      </section>
 
       <!-- Feedback -->
       <div id="feedback" class="feedback">
@@ -80,7 +103,44 @@
     </section>
 
  <!-- Equipe -->
-<section id="sec-equipe"></section>
+<section id="sec-equipe" class="secao escondido">
+
+  <header class="secao__cabecalho">
+    <h2>Equipe</h2>
+    <p class="secao__subtitulo">Integrantes do Projeto</p>
+  </header>
+
+  <section class="equipe">
+
+    <article class="card-equipe">
+      <img src="img/carlos.jpg" alt="Foto de Carlos" class="foto-perfil">
+      <h3>Participante 1</h3>
+      <p><strong>Carlos Eduardo Brandão Benedito</strong></p>
+      <p class="funcao">Responsável pela estruturação inicial do projeto, HTML base e organização geral.</p>
+    </article>
+
+    <article class="card-equipe">
+      <img src="img/pedro.jpg" alt="Foto de Pedro" class="foto-perfil">
+      <h3>Participante 2</h3>
+      <p><strong>Pedro Henrique Sousa Cruz</strong></p>
+      <p class="funcao">Desenvolveu a integração com a API TMDB e implementou o arquivo <code>api.js</code>.</p>
+    </article>
+
+    <article class="card-equipe">
+      <img src="img/dalessandro.jpg" alt="Foto de Dalessandro" class="foto-perfil">
+      <h3>Participante 3</h3>
+      <p><strong>Dalessandro José Coelho da Silva</strong></p>
+      <p class="funcao">Criou a interface visual, estilização de componentes e aprimorou o <code>ui.js</code>.</p>
+    </article>
+
+    <article class="card-equipe">
+      <img src="img/wesley.jpg" alt="Foto de Wesley" class="foto-perfil">
+      <h3>Participante 4</h3>
+      <p><strong>Antônio Wesley Veras Costa</strong></p>
+      <p class="funcao">Implementou a lógica principal do sistema, filtros, paginação e integração geral.</p>
+    </article>
+
+  </section>
 
 </section>
 

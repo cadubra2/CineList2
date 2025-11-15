@@ -163,9 +163,10 @@ body {
   line-height: 1.3;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;   
+  -webkit-line-clamp: 2;   /* ← DUAS LINHAS */
   -webkit-box-orient: vertical;
 }
+
 /* ===========================================
    PAGINAÇÃO
 =========================================== */
@@ -252,3 +253,53 @@ body {
   transition: 0.2s;
 }
 
+/* ===========================================
+   EQUIPe
+=========================================== */
+
+.equipe {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.card-equipe {
+  padding: 1.3rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: 0.2s;
+}
+
+/* ===========================================
+   RODAPÉ
+=========================================== */
+
+.rodape {
+  margin-top: 2.5rem;
+  padding: 1.2rem;
+  text-align: center;
+  background: #080b10;
+  color: var(--text-muted);
+}
+
+/* ===========================================
+   OCULTAR
+=========================================== */
+
+.escondido {
+  display: none !important;
+}
+
+
+.foto-perfil {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  margin-bottom: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.35);
+}
