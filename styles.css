@@ -166,3 +166,89 @@ body {
   -webkit-line-clamp: 2;   
   -webkit-box-orient: vertical;
 }
+/* ===========================================
+   PAGINAÇÃO
+=========================================== */
+
+.paginacao {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.botao {
+  background: var(--primary);
+  color: #000;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background: var(--primary-dark);
+}
+
+.botao:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ===========================================
+   MODAL
+=========================================== */
+
+.detalhes {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.detalhes__conteudo {
+  background: var(--bg-card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+  max-width: 880px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.detalhes__poster {
+  width: 190px;
+  border-radius: var(--radius);
+}
+
+.detalhes__texto {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.detalhes__texto::-webkit-scrollbar {
+  display: none;
+}
+
+.detalhes__fechar {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: #ff4747;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
