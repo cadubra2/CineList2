@@ -79,3 +79,90 @@ body {
   color: var(--primary);
   transform: translateY(-2px);
 }
+
+/* ===========================================
+   FILTROS
+=========================================== */
+
+.filtros {
+  display: flex;
+  gap: 1.2rem;
+  background: var(--bg-card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+}
+
+.campo select {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+}
+
+.campo label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ===========================================
+   CARDS
+=========================================== */
+
+.grade-titulos {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.card-titulo {
+  background: var(--bg-card);
+  padding: 0.6rem;
+  border-radius: var(--radius);
+  display: flex;
+  gap: 0.8rem;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: 0.2s;
+  box-shadow: var(--shadow-soft);
+}
+
+.card-titulo:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.card-titulo__img {
+  width: 90px;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-titulo__titulo {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-titulo__conteudo p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ===== SINOPSE CURTA (2 LINHAS) ===== */
+
+.card-titulo__resumo {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  line-height: 1.3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   
+  -webkit-box-orient: vertical;
+}
